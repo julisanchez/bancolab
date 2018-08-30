@@ -43,7 +43,9 @@
         android:id="@+id/optMoneda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:checkedButton="@+id/optPesos"
         android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/optDolar"
             android:layout_width="wrap_content"
@@ -85,19 +87,21 @@
     <SeekBar
         android:id="@+id/seekDias"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:min="10"
+        android:max="180"/>
 
     <TextView
         android:id="@+id/tvDiasSeleccionados"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text="Dias Seleccionados" />
 
     <TextView
         android:id="@+id/tvIntereses"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text="Intereses" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -125,7 +129,7 @@
         android:textOff="@string/lblAccionVencimientoAcreditar"/>
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkAceptoTerminos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lblAceptoTerminos" />
@@ -141,7 +145,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:layout_weight="1"/>
+        android:inputType=""
+        android:layout_weight="1"
+        android:enabled="false"/>
 
 </LinearLayout>
